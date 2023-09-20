@@ -43,9 +43,7 @@ let package = Package(
                 .product(name: "FacebookCore", package: "facebook-ios-sdk"),
                 .byName(name:  "TikTokOpenSDK"),
                 .product(name: "ExyteMediaPicker", package: "ExyteMediaPicker"),
-                
-               
-            ]),
+            ],  resources: [.copy("nouser.png")] ),
         
         .binaryTarget(
             name: "BAKFramework",
