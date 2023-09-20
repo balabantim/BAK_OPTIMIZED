@@ -7864,16 +7864,9 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 3640,
-      "length": 8,
-      "value": "\"nouser\""
-    },
-    {
-      "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
-      "kind": "StringLiteral",
-      "offset": 3665,
-      "length": 5,
-      "value": "\"png\""
+      "offset": 3622,
+      "length": 66,
+      "value": "\"https:\/\/secure.gravatar.com\/avatar\/thisimagewillnotbefound?s=111\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/PVC.swift",
@@ -8151,16 +8144,9 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 724,
-      "length": 8,
-      "value": "\"nouser\""
-    },
-    {
-      "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
-      "kind": "StringLiteral",
-      "offset": 749,
-      "length": 5,
-      "value": "\"png\""
+      "offset": 706,
+      "length": 66,
+      "value": "\"https:\/\/secure.gravatar.com\/avatar\/thisimagewillnotbefound?s=111\""
     }
   ]
 }
