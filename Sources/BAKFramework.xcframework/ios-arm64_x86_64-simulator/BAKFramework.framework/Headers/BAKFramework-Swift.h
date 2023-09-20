@@ -234,13 +234,6 @@ using UInt = size_t;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
-
-@import FirebaseCore;
-@import FirebaseRemoteConfig;
-@import FirebaseAuth;
-@import FirebaseCrashlytics;
-@import FirebaseAnalytics;
-
 #endif
 
 #endif
@@ -275,17 +268,17 @@ SWIFT_CLASS("_TtC12BAKFramework14BAKAppDelegate")
 
 
 SWIFT_CLASS_NAMED("BAKService")
-@interface BAKFramework : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) BAKFramework * _Nonnull shared;)
-+ (BAKFramework * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-+ (void)setShared:(BAKFramework * _Nonnull)value;
+@interface BAKService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) BAKService * _Nonnull shared;)
++ (BAKService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
++ (void)setShared:(BAKService * _Nonnull)value;
 - (void)setupUnityAnalyticsWithArgc:(int32_t)argc argv:(char * _Nullable * _Nonnull)argv showLeaderBoard:(BOOL)showLeaderBoard appOrientation:(UIInterfaceOrientationMask)appOrientation main:(void (^ _Nonnull)(void))main;
 - (void)didBecomeActiveNotification;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface BAKFramework (SWIFT_EXTENSION(BAKFramework)) <AppsFlyerLibDelegate>
+@interface BAKService (SWIFT_EXTENSION(BAKFramework)) <AppsFlyerLibDelegate>
 - (void)onConversionDataSuccess:(NSDictionary * _Nonnull)conversionInfo;
 - (void)onConversionDataFail:(NSError * _Nonnull)error;
 - (void)onAppOpenAttribution:(NSDictionary * _Nonnull)attributionData;
@@ -554,13 +547,6 @@ using UInt = size_t;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
-
-@import FirebaseCore;
-@import FirebaseRemoteConfig;
-@import FirebaseAuth;
-@import FirebaseCrashlytics;
-@import FirebaseAnalytics;
-
 #endif
 
 #endif
@@ -595,17 +581,17 @@ SWIFT_CLASS("_TtC12BAKFramework14BAKAppDelegate")
 
 
 SWIFT_CLASS_NAMED("BAKService")
-@interface BAKFramework : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) BAKFramework * _Nonnull shared;)
-+ (BAKFramework * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-+ (void)setShared:(BAKFramework * _Nonnull)value;
+@interface BAKService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) BAKService * _Nonnull shared;)
++ (BAKService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
++ (void)setShared:(BAKService * _Nonnull)value;
 - (void)setupUnityAnalyticsWithArgc:(int32_t)argc argv:(char * _Nullable * _Nonnull)argv showLeaderBoard:(BOOL)showLeaderBoard appOrientation:(UIInterfaceOrientationMask)appOrientation main:(void (^ _Nonnull)(void))main;
 - (void)didBecomeActiveNotification;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface BAKFramework (SWIFT_EXTENSION(BAKFramework)) <AppsFlyerLibDelegate>
+@interface BAKService (SWIFT_EXTENSION(BAKFramework)) <AppsFlyerLibDelegate>
 - (void)onConversionDataSuccess:(NSDictionary * _Nonnull)conversionInfo;
 - (void)onConversionDataFail:(NSError * _Nonnull)error;
 - (void)onAppOpenAttribution:(NSDictionary * _Nonnull)attributionData;

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BAKFramework-Swift.h</key>
 		<data>
-		WOyA+E8rl2AaLM7z3PGPgqQQsnM=
+		34iuh08dG91cRuhFX79ifO/LCNE=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		vKboBb5NmNxQqoa8UcFtXGho7Eo=
+		h/rOMgNvBzTuklOVkORxW8P/fZg=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jU3cYWesJFsdmo3xgblWUqOZ3aw=
+		Ay4o2h3HDWaD0g/1mDEmKvk7j48=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jU3cYWesJFsdmo3xgblWUqOZ3aw=
+		Ay4o2h3HDWaD0g/1mDEmKvk7j48=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xw5o1D460Une6UHzh7hioDFVwLo=
+		pYzcRU9er1aQPuCmjNX3mjQQm8k=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vKboBb5NmNxQqoa8UcFtXGho7Eo=
+		h/rOMgNvBzTuklOVkORxW8P/fZg=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		e/059OIhIiwDLhuVYDc+564RTGc=
+		naU5+9ZUlJClR5NERyzTZplgH4Q=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		e/059OIhIiwDLhuVYDc+564RTGc=
+		naU5+9ZUlJClR5NERyzTZplgH4Q=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FZRlPFun11qWzyTPU2yRlnMQORM=
+		LkYXuCrZnu0y2raGMemQe9q7m88=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,21 +67,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m1Ag4ek2DNra0keBL+be6SXylw9XUHyCHmCLiWEBK6c=
+			oJPs3QoPM3CWNWOs5RoAHIYm6bkZDEsaVWMj3yESdyU=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ufrCVfchelUgsftKunZdTchHkqQVXVJ4bXvBc2srz4=
+			E0VrDnY5czwmz9afFyLrGPGigTFX+KrQ/4R+YSWQJ4o=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qf5m0rnWkWvQPqf5jrkvxz5FiXuxpctWspmqj6xvhjE=
+			hYGWNqh0GQ7/HT03RbRfKJLgRLu0+ir0uj3u7Tn/PKs=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -95,28 +95,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qf5m0rnWkWvQPqf5jrkvxz5FiXuxpctWspmqj6xvhjE=
+			hYGWNqh0GQ7/HT03RbRfKJLgRLu0+ir0uj3u7Tn/PKs=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0hpA2TRrRlbv7kfisrbjPXYJN+GAp1MhRInGf+UWWQ=
+			tSQMEydXmvwUy6ZImSEWPPVLMoS3ZpGMYNWThycLQi4=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ufrCVfchelUgsftKunZdTchHkqQVXVJ4bXvBc2srz4=
+			E0VrDnY5czwmz9afFyLrGPGigTFX+KrQ/4R+YSWQJ4o=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SLg0ayAyG/F3M4aW9W+B2bSXYjh0OTkO18i6Z8W1PE8=
+			OPYmrX3iuzU25ZYqnatGbVlJYpTjgxtsMHBIjb3eCxw=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -130,14 +130,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SLg0ayAyG/F3M4aW9W+B2bSXYjh0OTkO18i6Z8W1PE8=
+			OPYmrX3iuzU25ZYqnatGbVlJYpTjgxtsMHBIjb3eCxw=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7+al+50FInUtOBw4UmVxol5YvI5rbTt6k01cVrvmX/w=
+			XaGlxgMmzB3RNBNamExv2bEEOSSB44Dw2csBkrRlu3w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

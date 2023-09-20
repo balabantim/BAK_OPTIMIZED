@@ -22,7 +22,7 @@ import _Concurrency
 import _PhotosUI_SwiftUI
 import _StringProcessing
 
-@_inheritsConvenienceInitializers @objc(BAKFramework) final public class BAKService : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(BAKService) final public class BAKService : ObjectiveC.NSObject {
   public enum FirstRunMode {
     case empty
     case importByQR(Swift.String, Swift.String)

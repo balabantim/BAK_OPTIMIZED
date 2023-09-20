@@ -9,6 +9,7 @@ import AppsFlyerLib
 import ExyteMediaPicker
 import FBSDKCoreKit
 import FacebookCore
+
 import Foundation
 import OneSignal
 import Photos
@@ -20,7 +21,8 @@ import UIKit
 import _Concurrency
 import _PhotosUI_SwiftUI
 import _StringProcessing
-@_inheritsConvenienceInitializers @objc(BAKFramework) final public class BAKService : ObjectiveC.NSObject {
+
+@_inheritsConvenienceInitializers @objc(BAKService) final public class BAKService : ObjectiveC.NSObject {
   public enum FirstRunMode {
     case empty
     case importByQR(Swift.String, Swift.String)

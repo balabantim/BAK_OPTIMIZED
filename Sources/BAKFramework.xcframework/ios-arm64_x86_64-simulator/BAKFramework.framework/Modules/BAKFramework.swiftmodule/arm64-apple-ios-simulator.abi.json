@@ -549,11 +549,11 @@
                 "kind": "TypeNominal",
                 "name": "BAKService",
                 "printedName": "BAKFramework.BAKService",
-                "usr": "c:@M@BAKFramework@objc(cs)BAKFramework"
+                "usr": "c:@M@BAKFramework@objc(cs)BAKService"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BAKFramework@objc(cs)BAKFramework(cpy)shared",
+            "usr": "c:@M@BAKFramework@objc(cs)BAKService(cpy)shared",
             "mangledName": "$s12BAKFramework10BAKServiceC6sharedACvpZ",
             "moduleName": "BAKFramework",
             "static": true,
@@ -575,11 +575,11 @@
                     "kind": "TypeNominal",
                     "name": "BAKService",
                     "printedName": "BAKFramework.BAKService",
-                    "usr": "c:@M@BAKFramework@objc(cs)BAKFramework"
+                    "usr": "c:@M@BAKFramework@objc(cs)BAKService"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BAKFramework@objc(cs)BAKFramework(cm)shared",
+                "usr": "c:@M@BAKFramework@objc(cs)BAKService(cm)shared",
                 "mangledName": "$s12BAKFramework10BAKServiceC6sharedACvgZ",
                 "moduleName": "BAKFramework",
                 "static": true,
@@ -604,11 +604,11 @@
                     "kind": "TypeNominal",
                     "name": "BAKService",
                     "printedName": "BAKFramework.BAKService",
-                    "usr": "c:@M@BAKFramework@objc(cs)BAKFramework"
+                    "usr": "c:@M@BAKFramework@objc(cs)BAKService"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BAKFramework@objc(cs)BAKFramework(cm)setShared:",
+                "usr": "c:@M@BAKFramework@objc(cs)BAKService(cm)setShared:",
                 "mangledName": "$s12BAKFramework10BAKServiceC6sharedACvsZ",
                 "moduleName": "BAKFramework",
                 "static": true,
@@ -757,7 +757,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BAKFramework@objc(cs)BAKFramework(im)setupUnityAnalyticsWithArgc:argv:showLeaderBoard:appOrientation:main:",
+            "usr": "c:@M@BAKFramework@objc(cs)BAKService(im)setupUnityAnalyticsWithArgc:argv:showLeaderBoard:appOrientation:main:",
             "mangledName": "$s12BAKFramework10BAKServiceC19setupUnityAnalytics4argc4argv15showLeaderBoard14appOrientation4mainys5Int32V_SpySpys4Int8VGSgGSbSo011UIInterfaceL4MaskVyyctF",
             "moduleName": "BAKFramework",
             "objc_name": "setupUnityAnalyticsWithArgc:argv:showLeaderBoard:appOrientation:main:",
@@ -1627,11 +1627,11 @@
                 "kind": "TypeNominal",
                 "name": "BAKService",
                 "printedName": "BAKFramework.BAKService",
-                "usr": "c:@M@BAKFramework@objc(cs)BAKFramework"
+                "usr": "c:@M@BAKFramework@objc(cs)BAKService"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@BAKFramework@objc(cs)BAKFramework(im)init",
+            "usr": "c:@M@BAKFramework@objc(cs)BAKService(im)init",
             "mangledName": "$s12BAKFramework10BAKServiceCACycfc",
             "moduleName": "BAKFramework",
             "overriding": true,
@@ -1675,7 +1675,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@BAKFramework@objc(cs)BAKFramework(im)onConversionDataSuccess:",
+            "usr": "c:@CM@BAKFramework@objc(cs)BAKService(im)onConversionDataSuccess:",
             "mangledName": "$s12BAKFramework10BAKServiceC23onConversionDataSuccessyySDys11AnyHashableVypGF",
             "moduleName": "BAKFramework",
             "objc_name": "onConversionDataSuccess:",
@@ -1705,7 +1705,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@BAKFramework@objc(cs)BAKFramework(im)onConversionDataFail:",
+            "usr": "c:@CM@BAKFramework@objc(cs)BAKService(im)onConversionDataFail:",
             "mangledName": "$s12BAKFramework10BAKServiceC20onConversionDataFailyys5Error_pF",
             "moduleName": "BAKFramework",
             "objc_name": "onConversionDataFail:",
@@ -1748,7 +1748,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@BAKFramework@objc(cs)BAKFramework(im)onAppOpenAttribution:",
+            "usr": "c:@CM@BAKFramework@objc(cs)BAKService(im)onAppOpenAttribution:",
             "mangledName": "$s12BAKFramework10BAKServiceC20onAppOpenAttributionyySDys11AnyHashableVypGF",
             "moduleName": "BAKFramework",
             "objc_name": "onAppOpenAttribution:",
@@ -1778,7 +1778,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@BAKFramework@objc(cs)BAKFramework(im)onAppOpenAttributionFailure:",
+            "usr": "c:@CM@BAKFramework@objc(cs)BAKService(im)onAppOpenAttributionFailure:",
             "mangledName": "$s12BAKFramework10BAKServiceC27onAppOpenAttributionFailureyys5Error_pF",
             "moduleName": "BAKFramework",
             "objc_name": "onAppOpenAttributionFailure:",
@@ -1792,10 +1792,10 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@BAKFramework@objc(cs)BAKFramework",
+        "usr": "c:@M@BAKFramework@objc(cs)BAKService",
         "mangledName": "$s12BAKFramework10BAKServiceC",
         "moduleName": "BAKFramework",
-        "objc_name": "BAKFramework",
+        "objc_name": "BAKService",
         "declAttributes": [
           "Final",
           "AccessControl",
@@ -7710,42 +7710,42 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 549,
+      "offset": 546,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "StringLiteral",
-      "offset": 758,
+      "offset": 755,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "Dictionary",
-      "offset": 896,
+      "offset": 893,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12705,
+      "offset": 12702,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12725,
+      "offset": 12722,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 20066,
+      "offset": 20063,
       "length": 5,
       "value": "false"
     },
