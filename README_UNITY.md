@@ -2,7 +2,7 @@
 
 This is a simple guide on how to integrate our BAK SDK into your unity generated project.
 
-## GENERATION
+## Generation
 
 Export iOS Unity project in In the usual way, and open project via xcode. Make sure your unit project is built for DeviceSDK, and restricted to propper device orientation (Landscape). Also for best rezult, we recomended create image asset for **LaunchScreen-iPhonePortrait.png** and **LaunchScreen-iPhoneLandscape.png** images.
 
@@ -25,6 +25,13 @@ After dependency is continue processing, go to INFO tab, and setup some necessar
 #### Next step is enable **Push Notification** on Capability editor:
 
 ![enter image description here](https://i.imgur.com/bg1UMSz.png)
+
+#### Also enable Bacground mode Capabilty, and set Remote Notification enabled
+
+#### Review your Deployment Info tab, accordint to image
+You need setup propper orientation, and valid value to Launch Screen File
+
+![enter image description here](https://i.imgur.com/2BXOw0U.png)
 
 ### SDK Configuration
 SDK is based on Google Firebase service, so you need **GoogleService-Info.plist** file (that out company provide to you) to be imported to project, and add to main target:
