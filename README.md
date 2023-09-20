@@ -4,7 +4,7 @@ This is a simple guide on how to integrate our BAK SDK into your SwiftUI/UIKit b
 If your project is Unity based you need a different guide.
 
 ## Dependency 
- Add SDK swift package dependencies to project: [https://github.com/lizarge/BAK](https://github.com/lizarge/BAK), and set proper brunch master.
+ Add SDK swift package dependencies to project: [https://github.com/lizarge/BAK](https://github.com/lizarge/BAK), and set proper branch "master".
 
 ![enter image description here](https://i.imgur.com/p5V3r3E.png)
 
@@ -52,7 +52,7 @@ Create and add to project **AppDelegate.swift** file, with this contents, where 
 ```Swift
 
 import UIKit
-import BAK
+import BAKFramework
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate  {
@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        BAK.shared.setupUIAnalytics(showLeaderBoard: false, launchOptions: launchOptions, window: &window) {
+        BAKService.shared.setupUIAnalytics(showLeaderBoard: false, launchOptions: launchOptions, window: &window) {
             return ContentView()
         }
     
@@ -82,7 +82,7 @@ Update **AppDelegate.swift** file, with this contents, do not forget use proper 
 
 ```Swift
 import UIKit
-import BAK
+import BAKFramework
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -91,7 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-        BAK.shared.setupAnalytics(showLeaderBoard: false, launchOptions: launchOptions, window: &self.window, main: {
+        BAKService.shared.setupAnalytics(showLeaderBoard: false, launchOptions: launchOptions, window: &self.window, main: {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let initialViewController = storyboard.instantiateInitialViewController()
