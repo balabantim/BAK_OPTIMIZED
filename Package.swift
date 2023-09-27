@@ -50,7 +50,7 @@ let package = Package(
                   .product(name: "MediaPicker", package: "SwiftUI-MediaPicker"),
                 
                 .byName(name:  "TikTokOpenSDK")
-            ],  resources: [.copy("nouser.png")] ),
+            ]),
         
         .binaryTarget(
             name: "BAKFramework",

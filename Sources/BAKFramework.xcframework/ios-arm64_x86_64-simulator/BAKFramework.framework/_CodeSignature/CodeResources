@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		kECDuDAue5/Saw2Uc0iiLdQr4rE=
+		F+QekBi2su0QiO9Gegi1kSksBNI=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		CfQ1yhp4k7ttnQc6zO0lTxwRXYE=
+		R65dIuG7xx7iD9obbREZ2LgC/gY=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CfQ1yhp4k7ttnQc6zO0lTxwRXYE=
+		R65dIuG7xx7iD9obbREZ2LgC/gY=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YQxtTQqHqbkP6XihCtpOVxAx/5A=
+		W3ITbkCSIN0j5cOgcSyuHrJglmE=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		kECDuDAue5/Saw2Uc0iiLdQr4rE=
+		F+QekBi2su0QiO9Gegi1kSksBNI=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Lh/wCYa26Vnf606d2vWQGvtmkoU=
+		fF1s8yk7o9ExugBaLDM0fqaB7Jg=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,19 +46,15 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Lh/wCYa26Vnf606d2vWQGvtmkoU=
+		fF1s8yk7o9ExugBaLDM0fqaB7Jg=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UHlgMMoLfLMTGT4wSZBEle3tHy4=
+		Gc47FJvEu+O6F3A0EHxa1xOZyd4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Sn51N0aiIb5iY4QgbwIzsVm+yhA=
-		</data>
-		<key>nouser.png</key>
-		<data>
-		WGElHJu/oyoTFkSDQrrvGUXfYhg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -74,14 +70,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aikDOWWz2AU/iuDMQLjBvLlMQbcib6TNArMFWjTSVnI=
+			oFnGW+M3Uj52fyXWwk/5QmElviG0ctJDle+TyzolkRg=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UELooY6HlWf2O4lkhocilREm48T3S7km6ZBOy9WqaRg=
+			bVrFu3WBjMd/DAFLT7VvV/LAKfPejHe2KWoMfTJnZrI=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -95,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UELooY6HlWf2O4lkhocilREm48T3S7km6ZBOy9WqaRg=
+			bVrFu3WBjMd/DAFLT7VvV/LAKfPejHe2KWoMfTJnZrI=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Coxa02SquTkqZ3CeTk/jx6zdHIzZDqXK3SxTVTKZGA=
+			/BOj90nUzY1irzico25+1ZiY4eWKtgBl41y7BrZcFlg=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aikDOWWz2AU/iuDMQLjBvLlMQbcib6TNArMFWjTSVnI=
+			oFnGW+M3Uj52fyXWwk/5QmElviG0ctJDle+TyzolkRg=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ToFHiSFh+q66P1+xtmj35EcvzK6bfKtc4zwe4PlUffQ=
+			/nz2MUowxbhmhdo7ddj/AtLbCkSTfzgg79Fs+mefW2k=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -130,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ToFHiSFh+q66P1+xtmj35EcvzK6bfKtc4zwe4PlUffQ=
+			/nz2MUowxbhmhdo7ddj/AtLbCkSTfzgg79Fs+mefW2k=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qT/xzbIzI33b8ttJNVeKElvbzsv1WokVRDjzSljBxQQ=
+			K9w6irOXpC4SgeHHcEOEy4n3mdu0wjs0nfz+LUSSBcs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -145,13 +141,6 @@
 			<key>hash2</key>
 			<data>
 			ZGa3YcIwrsFLrc/XsMg+uF420lNCF2jFViibfKLGRVU=
-			</data>
-		</dict>
-		<key>nouser.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7jvnYW69gPUbDOmLMkIGY7pxgPApdur5JxV+mTnBdeY=
 			</data>
 		</dict>
 	</dict>
