@@ -6,7 +6,7 @@ If your project is Unity based you need a different [guide](README_UNITY.md).
 ## Dependency 
  Add SDK swift package dependencies to project: [https://github.com/lizarge/BAK](https://github.com/lizarge/BAK), and set proper branch "master".
 
-![enter image description here](https://i.imgur.com/p5V3r3E.png)
+![enter image description here](https://i.imgur.com/JFZ89Bv.png)
 
 ## Info.plist setup
 After dependency is continue processing, go to INFO tab, and setup some necessary fields:

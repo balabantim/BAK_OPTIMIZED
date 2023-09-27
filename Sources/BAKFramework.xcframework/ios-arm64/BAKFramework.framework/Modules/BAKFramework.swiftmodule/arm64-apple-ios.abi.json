@@ -1898,15 +1898,15 @@
       },
       {
         "kind": "Import",
-        "name": "ExyteMediaPicker",
-        "printedName": "ExyteMediaPicker",
+        "name": "FirebaseStorage",
+        "printedName": "FirebaseStorage",
         "declKind": "Import",
         "moduleName": "BAKFramework"
       },
       {
         "kind": "Import",
-        "name": "FirebaseStorage",
-        "printedName": "FirebaseStorage",
+        "name": "SBPAsyncImage",
+        "printedName": "SBPAsyncImage",
         "declKind": "Import",
         "moduleName": "BAKFramework"
       },
@@ -3826,15 +3826,22 @@
       },
       {
         "kind": "Import",
-        "name": "ExyteMediaPicker",
-        "printedName": "ExyteMediaPicker",
+        "name": "FirebaseStorage",
+        "printedName": "FirebaseStorage",
         "declKind": "Import",
         "moduleName": "BAKFramework"
       },
       {
         "kind": "Import",
-        "name": "FirebaseStorage",
-        "printedName": "FirebaseStorage",
+        "name": "SBPAsyncImage",
+        "printedName": "SBPAsyncImage",
+        "declKind": "Import",
+        "moduleName": "BAKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPicker",
+        "printedName": "MediaPicker",
         "declKind": "Import",
         "moduleName": "BAKFramework"
       },
@@ -7752,119 +7759,119 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 287,
+      "offset": 283,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 263,
+      "offset": 259,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 330,
+      "offset": 326,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 306,
+      "offset": 302,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 373,
+      "offset": 369,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 349,
+      "offset": 345,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 416,
+      "offset": 412,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 392,
+      "offset": 388,
       "length": 3,
       "value": "\"4\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 459,
+      "offset": 455,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 435,
+      "offset": 431,
       "length": 3,
       "value": "\"5\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "IntegerLiteral",
-      "offset": 499,
+      "offset": 495,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 478,
+      "offset": 474,
       "length": 3,
       "value": "\"6\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "IntegerLiteral",
-      "offset": 537,
+      "offset": 533,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 517,
+      "offset": 513,
       "length": 3,
       "value": "\"7\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 679,
+      "offset": 675,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 717,
+      "offset": 713,
       "length": 13,
       "value": "\"Leaderboard\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 3622,
+      "offset": 3685,
       "length": 66,
       "value": "\"https:\/\/secure.gravatar.com\/avatar\/thisimagewillnotbefound?s=111\""
     },
@@ -8074,77 +8081,77 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 291,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 313,
+      "offset": 329,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 369,
+      "offset": 385,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 398,
+      "offset": 414,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 427,
+      "offset": 443,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 453,
+      "offset": 469,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 481,
+      "offset": 497,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 514,
+      "offset": 530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "Array",
-      "offset": 566,
+      "offset": 580,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 614,
+      "offset": 628,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/LeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 706,
+      "offset": 720,
       "length": 66,
       "value": "\"https:\/\/secure.gravatar.com\/avatar\/thisimagewillnotbefound?s=111\""
     }

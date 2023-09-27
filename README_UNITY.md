@@ -9,7 +9,7 @@ Export iOS Unity project in In the usual way, and open project via xcode. Make s
 ## Dependency 
  Add SDK swift package dependencies to project: [https://github.com/lizarge/BAK](https://github.com/lizarge/BAK), and set proper branch "master".
 
-![enter image description here](https://i.imgur.com/p5V3r3E.png)
+![enter image description here](https://i.imgur.com/JFZ89Bv.png)
 
 ## Info.plist setup
 After dependency is continue processing, go to INFO tab, and setup some necessary fields:
