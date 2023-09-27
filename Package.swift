@@ -23,8 +23,12 @@ let package = Package(
             url: "https://github.com/qasim/TikTokOpenSDK.git", from: "5.0.0"),
         .package(
             url: "https://github.com/firebase/firebase-ios-sdk.git", from: "9.6.0"),
-        
-            .package(url: "https://github.com/exyte/ExyteMediaPicker.git", from: "1.2.3"),
+        .package(
+            url: "https://github.com/UWAppDev/SwiftUI-MediaPicker", from: "0.2.0"),
+        .package(
+            url: "https://github.com/yutailang0119/SBPAsyncImage", from: "0.2.0"),
+
+
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -41,8 +45,11 @@ let package = Package(
                 
                 .product(name: "AppsFlyerLib", package: "AppsFlyerFramework"),
                 .product(name: "FacebookCore", package: "facebook-ios-sdk"),
-                .byName(name:  "TikTokOpenSDK"),
-                .product(name: "ExyteMediaPicker", package: "ExyteMediaPicker"),
+
+                  .product(name: "SBPAsyncImage", package: "SBPAsyncImage"),
+                  .product(name: "MediaPicker", package: "SwiftUI-MediaPicker"),
+                
+                .byName(name:  "TikTokOpenSDK")
             ],  resources: [.copy("nouser.png")] ),
         
         .binaryTarget(
