@@ -8,8 +8,7 @@ import AppTrackingTransparency
 import AppsFlyerLib
 import FBSDKCoreKit
 import FacebookCore
-import FirebaseAuth
-import FirebaseStorage
+
 import Foundation
 import MediaPicker
 import OneSignal
@@ -23,7 +22,7 @@ import UIKit
 import _Concurrency
 import _PhotosUI_SwiftUI
 import _StringProcessing
-@_exported import __ObjC
+
 @_inheritsConvenienceInitializers @objc(BAKService) final public class BAKService : ObjectiveC.NSObject {
   public enum FirstRunMode {
     case empty
@@ -54,7 +53,7 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc deinit
 }
-extension BAKFramework.BAKService : AppsFlyerLib.AppsFlyerLibDelegate {
+extension BAKFramework.BAKService : AppsFlyerLibDelegate {
   @objc final public func onConversionDataSuccess(_ conversionInfo: [Swift.AnyHashable : Any])
   @objc final public func onConversionDataFail(_ error: Swift.Error)
   @objc final public func onAppOpenAttribution(_ attributionData: [Swift.AnyHashable : Any])
