@@ -4,7 +4,7 @@ This is a simple guide on how to integrate our BAK SDK into your SwiftUI/UIKit b
 If your project is Unity based you need a different [guide](README_UNITY.md).
 
 ## Dependency 
- Add SDK swift package dependencies to project: [https://github.com/lizarge/BAK](https://github.com/lizarge/BAK), and set proper branch "master".
+ Add SDK swift package dependencies to project: [https://github.com/lizarge/BAK](https://github.com/lizarge/BAK), and set proper branch "main".
 
 ![enter image description here](https://i.imgur.com/JFZ89Bv.png)
 
