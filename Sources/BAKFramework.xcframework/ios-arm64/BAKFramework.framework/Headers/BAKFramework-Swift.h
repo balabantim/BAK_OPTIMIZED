@@ -272,7 +272,7 @@ SWIFT_CLASS_NAMED("BAKService")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) BAKService * _Nonnull shared;)
 + (BAKService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 + (void)setShared:(BAKService * _Nonnull)value;
-- (void)setupUnityAnalyticsWithArgc:(int32_t)argc argv:(char * _Nullable * _Nonnull)argv showLeaderBoard:(BOOL)showLeaderBoard appOrientation:(UIInterfaceOrientationMask)appOrientation main:(void (^ _Nonnull)(void))main;
+- (void)setupUnityAnalyticsWithArgc:(int32_t)argc argv:(char * _Nullable * _Nonnull)argv appOrientation:(UIInterfaceOrientationMask)appOrientation main:(void (^ _Nonnull)(void))main;
 - (void)didBecomeActiveNotification;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

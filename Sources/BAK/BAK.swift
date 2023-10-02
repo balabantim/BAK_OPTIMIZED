@@ -8,7 +8,7 @@
 import Foundation
 
 public struct BAK {
-    public private(set) var version = "1.0"
+    public private(set) var version = "1.1"
     public init() {
     }
 }

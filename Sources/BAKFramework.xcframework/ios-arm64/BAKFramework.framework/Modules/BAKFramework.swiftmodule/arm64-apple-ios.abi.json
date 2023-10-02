@@ -682,7 +682,7 @@
           {
             "kind": "Function",
             "name": "setupUnityAnalytics",
-            "printedName": "setupUnityAnalytics(argc:argv:showLeaderBoard:appOrientation:main:)",
+            "printedName": "setupUnityAnalytics(argc:argv:appOrientation:main:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -727,12 +727,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "UIInterfaceOrientationMask",
                 "printedName": "UIKit.UIInterfaceOrientationMask",
                 "hasDefaultArg": true,
@@ -757,10 +751,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BAKFramework@objc(cs)BAKService(im)setupUnityAnalyticsWithArgc:argv:showLeaderBoard:appOrientation:main:",
-            "mangledName": "$s12BAKFramework10BAKServiceC19setupUnityAnalytics4argc4argv15showLeaderBoard14appOrientation4mainys5Int32V_SpySpys4Int8VGSgGSbSo011UIInterfaceL4MaskVyyctF",
+            "usr": "c:@M@BAKFramework@objc(cs)BAKService(im)setupUnityAnalyticsWithArgc:argv:appOrientation:main:",
+            "mangledName": "$s12BAKFramework10BAKServiceC19setupUnityAnalytics4argc4argv14appOrientation4mainys5Int32V_SpySpys4Int8VGSgGSo011UIInterfaceI4MaskVyyctF",
             "moduleName": "BAKFramework",
-            "objc_name": "setupUnityAnalyticsWithArgc:argv:showLeaderBoard:appOrientation:main:",
+            "objc_name": "setupUnityAnalyticsWithArgc:argv:appOrientation:main:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -771,18 +765,12 @@
           {
             "kind": "Function",
             "name": "setupAnalytics",
-            "printedName": "setupAnalytics(showLeaderBoard:appOrientation:launchOptions:window:main:back:)",
+            "printedName": "setupAnalytics(appOrientation:launchOptions:window:main:back:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -887,8 +875,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12BAKFramework10BAKServiceC14setupAnalytics15showLeaderBoard14appOrientation13launchOptions6window4main4backySb_So011UIInterfaceI4MaskVSDySo019UIApplicationLaunchK3KeyaypGSgSo8UIWindowCSgzyycSgATtF",
-            "mangledName": "$s12BAKFramework10BAKServiceC14setupAnalytics15showLeaderBoard14appOrientation13launchOptions6window4main4backySb_So011UIInterfaceI4MaskVSDySo019UIApplicationLaunchK3KeyaypGSgSo8UIWindowCSgzyycSgATtF",
+            "usr": "s:12BAKFramework10BAKServiceC14setupAnalytics14appOrientation13launchOptions6window4main4backySo011UIInterfaceF4MaskV_SDySo019UIApplicationLaunchH3KeyaypGSgSo8UIWindowCSgzyycSgAStF",
+            "mangledName": "$s12BAKFramework10BAKServiceC14setupAnalytics14appOrientation13launchOptions6window4main4backySo011UIInterfaceF4MaskV_SDySo019UIApplicationLaunchH3KeyaypGSgSo8UIWindowCSgzyycSgAStF",
             "moduleName": "BAKFramework",
             "declAttributes": [
               "Final",
@@ -899,18 +887,12 @@
           {
             "kind": "Function",
             "name": "setupUIAnalytics",
-            "printedName": "setupUIAnalytics(showLeaderBoard:appOrientation:launchOptions:window:main:back:)",
+            "printedName": "setupUIAnalytics(appOrientation:launchOptions:window:main:back:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -1024,8 +1006,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12BAKFramework10BAKServiceC16setupUIAnalytics15showLeaderBoard14appOrientation13launchOptions6window4main4backySb_So011UIInterfaceI4MaskVSDySo019UIApplicationLaunchK3KeyaypGSgSo8UIWindowCSgz7SwiftUI4View_pSgycSgyycSgtF",
-            "mangledName": "$s12BAKFramework10BAKServiceC16setupUIAnalytics15showLeaderBoard14appOrientation13launchOptions6window4main4backySb_So011UIInterfaceI4MaskVSDySo019UIApplicationLaunchK3KeyaypGSgSo8UIWindowCSgz7SwiftUI4View_pSgycSgyycSgtF",
+            "usr": "s:12BAKFramework10BAKServiceC16setupUIAnalytics14appOrientation13launchOptions6window4main4backySo011UIInterfaceF4MaskV_SDySo019UIApplicationLaunchH3KeyaypGSgSo8UIWindowCSgz7SwiftUI4View_pSgycSgyycSgtF",
+            "mangledName": "$s12BAKFramework10BAKServiceC16setupUIAnalytics14appOrientation13launchOptions6window4main4backySo011UIInterfaceF4MaskV_SDySo019UIApplicationLaunchH3KeyaypGSgSo8UIWindowCSgz7SwiftUI4View_pSgycSgyycSgtF",
             "moduleName": "BAKFramework",
             "declAttributes": [
               "Final",
@@ -1356,6 +1338,50 @@
                     "declKind": "Accessor",
                     "usr": "s:12BAKFramework10BAKServiceC15LAConfigurationV5emailSSSgvg",
                     "mangledName": "$s12BAKFramework10BAKServiceC15LAConfigurationV5emailSSSgvg",
+                    "moduleName": "BAKFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "leaderboard",
+                "printedName": "leaderboard",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12BAKFramework10BAKServiceC15LAConfigurationV11leaderboardSbvp",
+                "mangledName": "$s12BAKFramework10BAKServiceC15LAConfigurationV11leaderboardSbvp",
+                "moduleName": "BAKFramework",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12BAKFramework10BAKServiceC15LAConfigurationV11leaderboardSbvg",
+                    "mangledName": "$s12BAKFramework10BAKServiceC15LAConfigurationV11leaderboardSbvg",
                     "moduleName": "BAKFramework",
                     "implicit": true,
                     "accessorKind": "get"
@@ -7797,21 +7823,21 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12703,
+      "offset": 12674,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12723,
+      "offset": 12694,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 20432,
+      "offset": 20403,
       "length": 5,
       "value": "false"
     },

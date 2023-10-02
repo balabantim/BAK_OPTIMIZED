@@ -40,7 +40,7 @@ SDK is based on Google Firebase service, so you need **GoogleService-Info.plist*
 
 ### C++ Module intergation:
 
-Navigate to **Builds Setting** and find **Disable Bitcode** key, set value to **NO** for all targets.
+Navigate to **Builds Setting** and find **Enable Bitcode** key, set value to **NO** for all targets.
 Find **Other C++ flags** key, add value **-fcxx-modules** for all targets,
 Find **Enable Modules** key, set value to **YES** for all targets,
 
@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
     {
         __strong id ufw = UnityFrameworkLoad();
         
-        [[BAKService shared] setupUnityAnalyticsWithArgc:argc argv:argv showLeaderBoard:true appOrientation:UIInterfaceOrientationMaskAll main:^{
+        [[BAKService shared] setupUnityAnalyticsWithArgc:argc argv:argv appOrientation:UIInterfaceOrientationMaskAll main:^{
             [ufw runEmbeddedWithArgc:argc argv:argv appLaunchOpts:nil];
         }];
         

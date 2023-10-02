@@ -8,7 +8,7 @@ import AppTrackingTransparency
 import AppsFlyerLib
 import FBSDKCoreKit
 import FacebookCore
-
+import FirebaseStorage
 import Foundation
 import MediaPicker
 import OneSignal
@@ -22,7 +22,7 @@ import UIKit
 import _Concurrency
 import _PhotosUI_SwiftUI
 import _StringProcessing
-
+@_exported import __ObjC
 @_inheritsConvenienceInitializers @objc(BAKService) final public class BAKService : ObjectiveC.NSObject {
   public enum FirstRunMode {
     case empty
@@ -33,9 +33,9 @@ import _StringProcessing
   final public var additionalKeys: [Swift.String : Swift.String]
   @objc public static var shared: BAKFramework.BAKService
   final public func showInitializationView(window: inout UIKit.UIWindow?)
-  @objc final public func setupUnityAnalytics(argc: Swift.Int32, argv: Swift.UnsafeMutablePointer<Swift.UnsafeMutablePointer<Swift.CChar>?>, showLeaderBoard: Swift.Bool, appOrientation: UIKit.UIInterfaceOrientationMask = .all, main: @escaping (() -> Swift.Void))
-  final public func setupAnalytics(showLeaderBoard: Swift.Bool, appOrientation: UIKit.UIInterfaceOrientationMask = .all, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, window: inout UIKit.UIWindow?, main: (() -> Swift.Void)? = nil, back: (() -> Swift.Void)? = nil)
-  final public func setupUIAnalytics(showLeaderBoard: Swift.Bool, appOrientation: UIKit.UIInterfaceOrientationMask = .all, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, window: inout UIKit.UIWindow?, main: (() -> (SwiftUI.View)?)? = nil, back: (() -> Swift.Void)? = nil)
+  @objc final public func setupUnityAnalytics(argc: Swift.Int32, argv: Swift.UnsafeMutablePointer<Swift.UnsafeMutablePointer<Swift.CChar>?>, appOrientation: UIKit.UIInterfaceOrientationMask = .all, main: @escaping (() -> Swift.Void))
+  final public func setupAnalytics(appOrientation: UIKit.UIInterfaceOrientationMask = .all, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, window: inout UIKit.UIWindow?, main: (() -> Swift.Void)? = nil, back: (() -> Swift.Void)? = nil)
+  final public func setupUIAnalytics(appOrientation: UIKit.UIInterfaceOrientationMask = .all, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, window: inout UIKit.UIWindow?, main: (() -> (SwiftUI.View)?)? = nil, back: (() -> Swift.Void)? = nil)
   public struct LAConfiguration : Swift.Codable {
     public let appleAppID: Swift.String
     public let appsFlyer: Swift.String
@@ -44,6 +44,7 @@ import _StringProcessing
     public let facebookid: Swift.String
     public let facebookkey: Swift.String
     public let email: Swift.String?
+    public let leaderboard: Swift.Bool
     public let privacyUrl: Swift.String?
     public let config: Swift.Bool?
     public let termUrl: Swift.String?
@@ -53,7 +54,7 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc deinit
 }
-extension BAKFramework.BAKService : AppsFlyerLibDelegate {
+extension BAKFramework.BAKService : AppsFlyerLib.AppsFlyerLibDelegate {
   @objc final public func onConversionDataSuccess(_ conversionInfo: [Swift.AnyHashable : Any])
   @objc final public func onConversionDataFail(_ error: Swift.Error)
   @objc final public func onAppOpenAttribution(_ attributionData: [Swift.AnyHashable : Any])
