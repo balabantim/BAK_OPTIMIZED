@@ -31,10 +31,10 @@ After dependency is continue processing, go to INFO tab, and setup some necessar
 #### Review your Deployment Info tab, accordint to image
 You need setup propper orientation, and valid value to Launch Screen File
 
-![enter image description here](https://i.imgur.com/2BXOw0U.png)
+![enter image description here](https://i.imgur.com/wrD6Kk1.png)
 
 ### SDK Configuration
-SDK is based on Google Firebase service, so you need **GoogleService-Info.plist** file (that out company provide to you) to be imported to project, and add to main target:
+SDK is based on Google Firebase service, so you need **GoogleService-Info.plist** file (that out company provide to you) to be imported to project, and add to main target, please note: file name must be exactly GoogleService-Info.plist:
 
 ![enter image description here](https://i.imgur.com/pZTba6L.png)
 
