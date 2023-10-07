@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BAKFramework-Swift.h</key>
 		<data>
-		Kwro9YrbIxmUvbrFFKO+KHhlCY4=
+		NXXwTDlR8jEF19PfrP4kChP8yP8=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		kJshdSfSoadfat398/7n2zA1ork=
+		mZq7g9F8I6qNu7qt6DbidvhmVYs=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0vfYLiOVwTLDHe6Dicrb05bpV7o=
+		CQFUM5vpbp5j8OACSSRjG9O+OQ8=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0vfYLiOVwTLDHe6Dicrb05bpV7o=
+		CQFUM5vpbp5j8OACSSRjG9O+OQ8=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xZl2axelYUC3TPiTu/XgZg4p1mc=
+		4WVBnpg4sW8+lfcgLo6pokKAzcI=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		kJshdSfSoadfat398/7n2zA1ork=
+		mZq7g9F8I6qNu7qt6DbidvhmVYs=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		49wquxk0NsJAzljcuBFarwENSGQ=
+		aXMy/Epmvh2Vzft8SNm/QGiqcT4=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		49wquxk0NsJAzljcuBFarwENSGQ=
+		aXMy/Epmvh2Vzft8SNm/QGiqcT4=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XS/fpkEjdzy1zIWBaWUeI6YklFI=
+		Qb02YBrvz7iu4Vut9QPgPbzVjZs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eSnKz/8Y28K+thUS6Dmb3pwZ/LBy67oqZZ3FuQ/VRD8=
+			egLnnsQEoakw+1MiPftewsOifhTnJgozNcu9HhRCvrM=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			agBbCS/evnYgs321yg+NTPNI6wVo54dI12HgHP2ntNE=
+			o3qsYIVSktUB9mDArH37HBNk/WD+Csf1kGCgEAB59Ik=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8x+Ze5g0rauoCZFNQtZpPIih7Vl3TG8Wbt+qIXmv1ls=
+			4FcapCizVG8kU8nfxY+Dnz+qhkQJBteir/HhLWENZ98=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8x+Ze5g0rauoCZFNQtZpPIih7Vl3TG8Wbt+qIXmv1ls=
+			4FcapCizVG8kU8nfxY+Dnz+qhkQJBteir/HhLWENZ98=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			glrfv6hwgptSCJCyJISDLulp8yqwFU+STqXcUtW1w0U=
+			afWrIccChjKDGO+dcxAv167TAJmnFN8Wx9F1/2Cftg0=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			agBbCS/evnYgs321yg+NTPNI6wVo54dI12HgHP2ntNE=
+			o3qsYIVSktUB9mDArH37HBNk/WD+Csf1kGCgEAB59Ik=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/+IWOIShGKgAzLMAGKU2hEBEEArxFk75TaPSZMOQ3Yw=
+			CBYH6GvSV6UrPhvNMnVZzmkryPB9TVb9OPSb72OTF3g=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/+IWOIShGKgAzLMAGKU2hEBEEArxFk75TaPSZMOQ3Yw=
+			CBYH6GvSV6UrPhvNMnVZzmkryPB9TVb9OPSb72OTF3g=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hw94bGZP/b9r70aYjJxOHfk0QTAw5174XxUsHSme/lI=
+			cGSb6aXaer1nvYim58Af47Uu/ECpNjBOpN6uHCapI4Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

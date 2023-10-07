@@ -1016,6 +1016,106 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Var",
+            "name": "orientationLock",
+            "printedName": "orientationLock",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12BAKFramework10BAKServiceC15orientationLockSo26UIInterfaceOrientationMaskVvpZ",
+            "mangledName": "$s12BAKFramework10BAKServiceC15orientationLockSo26UIInterfaceOrientationMaskVvpZ",
+            "moduleName": "BAKFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12BAKFramework10BAKServiceC15orientationLockSo26UIInterfaceOrientationMaskVvgZ",
+                "mangledName": "$s12BAKFramework10BAKServiceC15orientationLockSo26UIInterfaceOrientationMaskVvgZ",
+                "moduleName": "BAKFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12BAKFramework10BAKServiceC15orientationLockSo26UIInterfaceOrientationMaskVvsZ",
+                "mangledName": "$s12BAKFramework10BAKServiceC15orientationLockSo26UIInterfaceOrientationMaskVvsZ",
+                "moduleName": "BAKFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12BAKFramework10BAKServiceC15orientationLockSo26UIInterfaceOrientationMaskVvMZ",
+                "mangledName": "$s12BAKFramework10BAKServiceC15orientationLockSo26UIInterfaceOrientationMaskVvMZ",
+                "moduleName": "BAKFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "TypeDecl",
             "name": "LAConfiguration",
             "printedName": "LAConfiguration",
@@ -2114,197 +2214,6 @@
         "name": "PVC",
         "printedName": "PVC",
         "children": [
-          {
-            "kind": "Var",
-            "name": "clakOrientationMask",
-            "printedName": "clakOrientationMask",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIInterfaceOrientationMask?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12BAKFramework3PVCC19clakOrientationMaskSo011UIInterfacedE0VSgvp",
-            "mangledName": "$s12BAKFramework3PVCC19clakOrientationMaskSo011UIInterfacedE0VSgvp",
-            "moduleName": "BAKFramework",
-            "declAttributes": [
-              "Custom",
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIInterfaceOrientationMask?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIInterfaceOrientationMask",
-                        "printedName": "UIKit.UIInterfaceOrientationMask",
-                        "usr": "c:@E@UIInterfaceOrientationMask"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12BAKFramework3PVCC19clakOrientationMaskSo011UIInterfacedE0VSgvg",
-                "mangledName": "$s12BAKFramework3PVCC19clakOrientationMaskSo011UIInterfacedE0VSgvg",
-                "moduleName": "BAKFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIInterfaceOrientationMask?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIInterfaceOrientationMask",
-                        "printedName": "UIKit.UIInterfaceOrientationMask",
-                        "usr": "c:@E@UIInterfaceOrientationMask"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12BAKFramework3PVCC19clakOrientationMaskSo011UIInterfacedE0VSgvs",
-                "mangledName": "$s12BAKFramework3PVCC19clakOrientationMaskSo011UIInterfacedE0VSgvs",
-                "moduleName": "BAKFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12BAKFramework3PVCC19clakOrientationMaskSo011UIInterfacedE0VSgvM",
-                "mangledName": "$s12BAKFramework3PVCC19clakOrientationMaskSo011UIInterfacedE0VSgvM",
-                "moduleName": "BAKFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "supportedInterfaceOrientations",
-            "printedName": "supportedInterfaceOrientations",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIInterfaceOrientationMask",
-                "printedName": "UIKit.UIInterfaceOrientationMask",
-                "usr": "c:@E@UIInterfaceOrientationMask"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BAKFramework@objc(cs)PVC(py)supportedInterfaceOrientations",
-            "mangledName": "$s12BAKFramework3PVCC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvp",
-            "moduleName": "BAKFramework",
-            "overriding": true,
-            "objc_name": "supportedInterfaceOrientations",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BAKFramework@objc(cs)PVC(im)supportedInterfaceOrientations",
-                "mangledName": "$s12BAKFramework3PVCC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvg",
-                "moduleName": "BAKFramework",
-                "overriding": true,
-                "objc_name": "supportedInterfaceOrientations",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BAKFramework@objc(cs)PVC(im)setSupportedInterfaceOrientations:",
-                "mangledName": "$s12BAKFramework3PVCC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvs",
-                "moduleName": "BAKFramework",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              }
-            ]
-          },
           {
             "kind": "Function",
             "name": "viewDidLoad",
@@ -7869,35 +7778,49 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "StringLiteral",
-      "offset": 754,
+      "offset": 679,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "Dictionary",
-      "offset": 892,
+      "offset": 817,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
+      "kind": "StringLiteral",
+      "offset": 7437,
+      "length": 13,
+      "value": "\"orientation\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
+      "kind": "StringLiteral",
+      "offset": 7565,
+      "length": 13,
+      "value": "\"orientation\""
+    },
+    {
+      "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13181,
+      "offset": 13628,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13201,
+      "offset": 13648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 21494,
+      "offset": 21193,
       "length": 5,
       "value": "false"
     },

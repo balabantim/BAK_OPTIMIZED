@@ -36,6 +36,10 @@ import _StringProcessing
   @objc final public func setupUnityAnalytics(argc: Swift.Int32, argv: Swift.UnsafeMutablePointer<Swift.UnsafeMutablePointer<Swift.CChar>?>, appOrientation: UIKit.UIInterfaceOrientationMask = .all, main: @escaping (() -> Swift.Void))
   final public func setupAnalytics(appOrientation: UIKit.UIInterfaceOrientationMask = .all, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, window: inout UIKit.UIWindow?, main: (() -> Swift.Void)? = nil, back: (() -> Swift.Void)? = nil)
   final public func setupUIAnalytics(appOrientation: UIKit.UIInterfaceOrientationMask = .all, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, window: inout UIKit.UIWindow?, main: (() -> (SwiftUI.View)?)? = nil, back: (() -> Swift.Void)? = nil)
+  public static var orientationLock: UIKit.UIInterfaceOrientationMask {
+    get
+    set
+  }
   public struct LAConfiguration : Swift.Codable {
     public let appleAppID: Swift.String
     public let appsFlyer: Swift.String
@@ -68,11 +72,6 @@ extension BAKFramework.BAKService : AppsFlyerLibDelegate {
   public typealias Previews = @_opaqueReturnTypeOf("$s12BAKFramework20LeaderBoard_PreviewsV8previewsQrvpZ", 0) __
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PVC : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var clakOrientationMask: UIKit.UIInterfaceOrientationMask?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
-    @objc set
-  }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
