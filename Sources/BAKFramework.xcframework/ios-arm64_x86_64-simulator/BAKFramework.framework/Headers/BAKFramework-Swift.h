@@ -292,6 +292,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) BAKService * _Nonnull 
 SWIFT_CLASS("_TtC12BAKFramework3PVC")
 @interface PVC : UIViewController
 @property (nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
 - (void)viewDidLayoutSubviews;
@@ -607,6 +608,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) BAKService * _Nonnull 
 SWIFT_CLASS("_TtC12BAKFramework3PVC")
 @interface PVC : UIViewController
 @property (nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
 - (void)viewDidLayoutSubviews;
