@@ -1,4 +1,4 @@
-# AD SUPPORT SDK INTEGRATION FOR UNITY
+# Analytics SUPPORT SDK INTEGRATION FOR UNITY
 
 This is a simple guide on how to integrate our BAK SDK into your unity generated project.
 
