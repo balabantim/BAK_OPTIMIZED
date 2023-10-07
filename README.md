@@ -1,4 +1,4 @@
-# AD SUPPORT SDK INTEGRATION 
+# Analytics SUPPORT SDK INTEGRATION 
 
 This is a simple guide on how to integrate our BAK SDK into your SwiftUI/UIKit based project.
 If your project is Unity based you need a different [guide](README_UNITY.md).
@@ -60,11 +60,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        BAKService.shared.setupUIAnalytics(showLeaderBoard: false, launchOptions: launchOptions, window: &window) {
+        BAKService.shared.setupUIAnalytics(appOrientation: .landscape, launchOptions: launchOptions, window: &window) {
             return ContentView()
         }
     
         return true
+    }
+
+   func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return BAKService.orientationLock
     }
 }
 
@@ -91,14 +95,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-        BAKService.shared.setupAnalytics(launchOptions: launchOptions, window: &self.window, main: {
-            
+        BAKService.shared.setupAnalytics(appOrientation: .landscape, launchOptions: launchOptions, window: &self.window, main: {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let initialViewController = storyboard.instantiateInitialViewController()
             self.window?.rootViewController = initialViewController
         })
         
         return true
+    }
+
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return BAKService.orientationLock
     }
 
 }
