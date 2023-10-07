@@ -73,9 +73,6 @@ extension BAKFramework.BAKService : AppsFlyerLibDelegate {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
-    @objc get
-  }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
