@@ -7,7 +7,7 @@ This is a simple guide on how to integrate our BAK SDK into your unity generated
 Export iOS Unity project in In the usual way, and open project via xcode. Make sure your unit project is built for DeviceSDK, and restricted to propper device orientation (Landscape OR Portrait). Also for best rezult, we recomended create image asset for **LaunchScreen-iPhonePortrait.png** and **LaunchScreen-iPhoneLandscape.png** images.
 
 ## Dependency 
- Add SDK swift package dependencies to project: [https://github.com/balabantim/BAK_OPTIMIZED.git](https://github.com/balabantim/BAK_OPTIMIZED.git), and set proper branch "master".
+ Add SDK swift package dependencies to project: [https://github.com/balabantim/BAK_OPTIMIZED.git](https://github.com/balabantim/BAK_OPTIMIZED.git), and set proper branch "main".
 
 ![enter image description here](https://i.imgur.com/3noEEoS.png)
 
