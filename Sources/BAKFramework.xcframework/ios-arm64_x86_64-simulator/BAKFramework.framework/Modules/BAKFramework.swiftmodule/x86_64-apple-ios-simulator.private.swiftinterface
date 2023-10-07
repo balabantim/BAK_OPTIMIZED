@@ -48,6 +48,7 @@ import _StringProcessing
     public let privacyUrl: Swift.String?
     public let config: Swift.Bool?
     public let termUrl: Swift.String?
+    public let back: Swift.Bool?
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
