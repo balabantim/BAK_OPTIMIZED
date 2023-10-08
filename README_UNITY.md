@@ -1,4 +1,6 @@
-# Analytics SUPPORT SDK INTEGRATION FOR UNITY
+# Analytics SDK Integration
+
+Our SDK combines all the tools for game analytics, tracking and push marketing in one solution. 
 
 This is a simple guide on how to integrate our BAK SDK into your unity generated project.
 
