@@ -1,4 +1,6 @@
-# Analytics SUPPORT SDK INTEGRATION 
+# Analytics SDK Integration
+
+Our SDK combines all the tools for analytics, tracking and push marketing in one solution.
 
 This is a simple guide on how to integrate our BAK SDK into your SwiftUI/UIKit based project.
 If your project is Unity based you need a different [guide](README_UNITY.md).
