@@ -49,6 +49,8 @@ Great, Almost everything is done, the next steps depend on the type of project y
 
 Create and add to project **AppDelegate.swift** file, with this contents, where *ContentView()* is your main SwiftUI view:
 
+Set appOrientation: .landscape or .portrait or .all depends of app support orientation.
+
 ```Swift
 
 import UIKit
@@ -83,6 +85,8 @@ Delete SwiftUI old root file from project (*app.swift file standart swiftui proj
 #### UIKit based application
 
 Update **AppDelegate.swift** file, with this contents, do not forget use proper main storyboard name, or init root view controler manualy:
+
+Set appOrientation: .landscape or .portrait or .all depends of app support orientation.
 
 ```Swift
 import UIKit
