@@ -50,6 +50,8 @@ Find **Enable Modules** key, set value to **YES** for all targets,
 
 Navigate to project main.mm file and update unity initialization with sdk version:
 
+Set appOrientation: .landscape or .portrait or .all depends of app support orientation.
+
 ```Swift
 #include <UnityFramework/UnityFramework.h>
 @import BAKFramework;
