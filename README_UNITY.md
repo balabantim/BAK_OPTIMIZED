@@ -16,13 +16,13 @@ Export iOS Unity project in In the usual way, and open project via xcode. Make s
 ## Info.plist setup
 After dependency is continue processing, go to INFO tab, and setup some necessary fields:
 
-> App Uses Non-Exempt Encryption  :  NO
+> ITSAppUsesNonExemptEncryption  :  NO
 
-> Privacy - Tracking Usage Description : Select "Allow" for better experience. This identifier will be used to collect Crash Data and in-app activity in order to improve functionalities and user engagement.
+> NSUserTrackingUsageDescription : Select "Allow" for better experience. This identifier will be used to collect Crash Data and in-app activity in order to improve functionalities and user engagement.
 
-> Privacy - Camera Usage Description : Select "Allow" for better experience. The app сan use images to setup user profile and problem solving, we do not store your personal photos.
+> NSCameraUsageDescription : Select "Allow" for better experience. The app сan use images to setup user profile and problem solving, we do not store your personal photos.
 
->Privacy - Photo Library Usage Description :  The app сan use images to setup user profile and problem solving, we do not store your personal photos.
+> NSPhotoLibraryUsageDescription :  The app сan use images to setup user profile and problem solving, we do not store your personal photos.
 
 #### Next step is enable **Push Notification** on Capability editor:
 
