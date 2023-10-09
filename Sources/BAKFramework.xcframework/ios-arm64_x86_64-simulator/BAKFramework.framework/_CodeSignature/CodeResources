@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		mZq7g9F8I6qNu7qt6DbidvhmVYs=
+		jILoxkayoBCnza6+8A+W+MPMAH4=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		mZq7g9F8I6qNu7qt6DbidvhmVYs=
+		jILoxkayoBCnza6+8A+W+MPMAH4=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3qsYIVSktUB9mDArH37HBNk/WD+Csf1kGCgEAB59Ik=
+			JoQDdwkfBh2ygfPRm4M7oQvSkJZ39MzsbmFcwflvMpc=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3qsYIVSktUB9mDArH37HBNk/WD+Csf1kGCgEAB59Ik=
+			JoQDdwkfBh2ygfPRm4M7oQvSkJZ39MzsbmFcwflvMpc=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
