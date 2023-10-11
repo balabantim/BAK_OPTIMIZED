@@ -20,8 +20,6 @@ let package = Package(
         .package(
             url: "https://github.com/facebook/facebook-ios-sdk.git", branch: "main"),
         .package(
-            url: "https://github.com/qasim/TikTokOpenSDK.git", from: "5.0.0"),
-        .package(
             url: "https://github.com/firebase/firebase-ios-sdk.git", from: "9.6.0"),
         .package(
             url: "https://github.com/UWAppDev/SwiftUI-MediaPicker", from: "0.2.0"),
@@ -42,14 +40,13 @@ let package = Package(
                 .target(name: "OneSignalCore"),
                 .target(name: "OneSignalExtension"),
                 .target(name: "OneSignalOutcomes"),
+                .target(name: "TikTokOpenSDK"),
                 
                 .product(name: "AppsFlyerLib", package: "AppsFlyerFramework"),
                 .product(name: "FacebookCore", package: "facebook-ios-sdk"),
 
                   .product(name: "SBPAsyncImage", package: "SBPAsyncImage"),
                   .product(name: "MediaPicker", package: "SwiftUI-MediaPicker"),
-                
-                .byName(name:  "TikTokOpenSDK")
             ]),
         
         .binaryTarget(
@@ -71,5 +68,11 @@ let package = Package(
         .binaryTarget(
             name: "OneSignalOutcomes",
             path: "./Sources/OneSignalOutcomes.xcframework"),
+        
+        .binaryTarget(
+            name: "TikTokOpenSDK",
+            path: "./Sources/TikTokOpenSDK.xcframework"),
+        
+       
     ]
 )

@@ -143,15 +143,6 @@
         "revision" : "96f18b1350873dec0a76355c7060cd0a06100901",
         "version" : "0.2.0"
       }
-    },
-    {
-      "identity" : "tiktokopensdk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/qasim/TikTokOpenSDK.git",
-      "state" : {
-        "revision" : "e00bcb5bc8496d0cb32eddc4980f0f462d7d1874",
-        "version" : "5.0.14"
-      }
     }
   ],
   "version" : 2
