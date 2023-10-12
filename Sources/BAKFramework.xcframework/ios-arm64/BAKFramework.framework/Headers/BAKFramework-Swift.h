@@ -230,9 +230,12 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVFoundation;
 @import AppsFlyerLib;
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import Photos;
 @import UIKit;
 #endif
 
@@ -254,6 +257,7 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
 @class UIWindow;
 @class UIApplication;
 @class NSURL;
@@ -268,7 +272,7 @@ SWIFT_CLASS("_TtC12BAKFramework14BAKAppDelegate")
 
 
 SWIFT_CLASS_NAMED("BAKService")
-@interface BAKService : NSObject
+@interface BAKService : NSObject <AppsFlyerLibDelegate>
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) BAKService * _Nonnull shared;)
 + (BAKService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 + (void)setShared:(BAKService * _Nonnull)value;
@@ -278,16 +282,58 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) BAKService * _Nonnull 
 @end
 
 
-@interface BAKService (SWIFT_EXTENSION(BAKFramework)) <AppsFlyerLibDelegate>
+@interface BAKService (SWIFT_EXTENSION(BAKFramework))
 - (void)onConversionDataSuccess:(NSDictionary * _Nonnull)conversionInfo;
 - (void)onConversionDataFail:(NSError * _Nonnull)error;
 - (void)onAppOpenAttribution:(NSDictionary * _Nonnull)attributionData;
 - (void)onAppOpenAttributionFailure:(NSError * _Nonnull)error;
 @end
 
+
+
+SWIFT_CLASS("_TtC12BAKFramework15CameraViewModel")
+@interface CameraViewModel : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class AVCaptureFileOutput;
+@class AVCaptureConnection;
+
+@interface CameraViewModel (SWIFT_EXTENSION(BAKFramework)) <AVCaptureFileOutputRecordingDelegate>
+- (void)captureOutput:(AVCaptureFileOutput * _Nonnull)output didFinishRecordingToOutputFileAtURL:(NSURL * _Nonnull)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> * _Nonnull)connections error:(NSError * _Nullable)error;
+@end
+
+@class AVCapturePhotoOutput;
+@class AVCapturePhoto;
+
+@interface CameraViewModel (SWIFT_EXTENSION(BAKFramework)) <AVCapturePhotoCaptureDelegate>
+- (void)captureOutput:(AVCapturePhotoOutput * _Nonnull)output didFinishProcessingPhoto:(AVCapturePhoto * _Nonnull)photo error:(NSError * _Nullable)error;
+@end
+
+
+
+/// Object with live camera preview. Use <code>captureImage: UIImage</code> publisher.
+/// Used solution (with adapt for new iOs version): https://medium.com/ios-os-x-development/ios-camera-frames-extraction-d2c0f80ed05a
+SWIFT_CLASS("_TtC12BAKFramework19LiveCameraViewModel")
+@interface LiveCameraViewModel : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSCoder;
+
+SWIFT_CLASS("_TtC12BAKFramework20LiveVideoCaptureView")
+@interface LiveVideoCaptureView : UIView
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+
 @class NSString;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12BAKFramework3PVC")
 @interface PVC : UIViewController
@@ -297,6 +343,24 @@ SWIFT_CLASS("_TtC12BAKFramework3PVC")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+@class PHChange;
+
+SWIFT_CLASS("_TtC12BAKFramework35PhotoLibraryChangePermissionWatcher")
+@interface PhotoLibraryChangePermissionWatcher : NSObject <PHPhotoLibraryChangeObserver>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)photoLibraryDidChange:(PHChange * _Nonnull)changeInstance;
+@end
+
+
+SWIFT_CLASS("_TtC12BAKFramework12PlayerUIView")
+@interface PlayerUIView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
 
 
 

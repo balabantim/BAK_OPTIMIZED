@@ -3,14 +3,17 @@
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BAKFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
+import AVKit
 import AdSupport
 import AppTrackingTransparency
 import AppsFlyerLib
+import Combine
+import CoreImage
+import CoreMotion
 import FBSDKCoreKit
 import FacebookCore
-
+//
 import Foundation
-import MediaPicker
 import OneSignal
 import Photos
 import SBPAsyncImage
@@ -18,12 +21,16 @@ import Swift
 import SwiftUI
 import SystemConfiguration
 import TikTokOpenSDK
+import UIKit.UIImage
 import UIKit
+import UIKit.UIScreen
+import UniformTypeIdentifiers
+import _AVKit_SwiftUI
 import _Concurrency
 import _PhotosUI_SwiftUI
 import _StringProcessing
-
-@_inheritsConvenienceInitializers @objc(BAKService) final public class BAKService : ObjectiveC.NSObject {
+//
+@_inheritsConvenienceInitializers @objc(BAKService) final public class BAKService : ObjectiveC.NSObject, AppsFlyerLibDelegate {
   public enum FirstRunMode {
     case empty
     case importByQR(Swift.String, Swift.String)
@@ -59,17 +66,77 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc deinit
 }
-extension BAKFramework.BAKService : AppsFlyerLibDelegate {
+extension BAKFramework.BAKService {
   @objc final public func onConversionDataSuccess(_ conversionInfo: [Swift.AnyHashable : Any])
   @objc final public func onConversionDataFail(_ error: Swift.Error)
   @objc final public func onAppOpenAttribution(_ attributionData: [Swift.AnyHashable : Any])
   @objc final public func onAppOpenAttributionFailure(_ error: Swift.Error)
+}
+extension SwiftUI.EnvironmentValues {
+  public var mediaPickerTheme: BAKFramework.MediaPickerTheme {
+    get
+    set
+  }
+}
+extension SwiftUI.View {
+  public func mediaPickerTheme(_ theme: BAKFramework.MediaPickerTheme) -> some SwiftUI.View
+  
+  public func mediaPickerTheme(main: BAKFramework.MediaPickerTheme.Main = .init(), selection: BAKFramework.MediaPickerTheme.Selection = .init(), error: BAKFramework.MediaPickerTheme.Error = .init()) -> some SwiftUI.View
+  
+}
+public struct MediaPickerTheme {
+  public let main: BAKFramework.MediaPickerTheme.Main
+  public let selection: BAKFramework.MediaPickerTheme.Selection
+  public let error: BAKFramework.MediaPickerTheme.Error
+  public init(main: BAKFramework.MediaPickerTheme.Main = .init(), selection: BAKFramework.MediaPickerTheme.Selection = .init(), error: BAKFramework.MediaPickerTheme.Error = .init())
+}
+extension BAKFramework.MediaPickerTheme {
+  public struct Main {
+    public let text: SwiftUI.Color
+    public let albumSelectionBackground: SwiftUI.Color
+    public let fullscreenPhotoBackground: SwiftUI.Color
+    public let cameraBackground: SwiftUI.Color
+    public let cameraSelectionBackground: SwiftUI.Color
+    public init(text: SwiftUI.Color = Color(UIColor.label), albumSelectionBackground: SwiftUI.Color = Color(UIColor.systemGroupedBackground), fullscreenPhotoBackground: SwiftUI.Color = Color(UIColor.systemGroupedBackground), cameraBackground: SwiftUI.Color = .black, cameraSelectionBackground: SwiftUI.Color = .black)
+  }
+  public struct Selection {
+    public let emptyTint: SwiftUI.Color
+    public let emptyBackground: SwiftUI.Color
+    public let selectedTint: SwiftUI.Color
+    public let selectedBackground: SwiftUI.Color
+    public let fullscreenTint: SwiftUI.Color
+    public init(emptyTint: SwiftUI.Color = .white, emptyBackground: SwiftUI.Color = .clear, selectedTint: SwiftUI.Color = .blue, selectedBackground: SwiftUI.Color = .white, fullscreenTint: SwiftUI.Color = .blue)
+  }
+  public struct Error {
+    public let background: SwiftUI.Color
+    public let tint: SwiftUI.Color
+    public init(background: SwiftUI.Color = .red.opacity(0.7), tint: SwiftUI.Color = .white)
+  }
 }
 @_Concurrency.MainActor(unsafe) public struct LeaderBoard_Previews : SwiftUI.PreviewProvider {
   @_Concurrency.MainActor(unsafe) public static var previews: some SwiftUI.View {
     get
   }
   public typealias Previews = @_opaqueReturnTypeOf("$s12BAKFramework20LeaderBoard_PreviewsV8previewsQrvpZ", 0) __
+}
+public enum MediaSelectionStyle {
+  case checkmark
+  case count
+  public static func == (a: BAKFramework.MediaSelectionStyle, b: BAKFramework.MediaSelectionStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum MediaSelectionType {
+  case photoAndVideo
+  case photo
+  case video
+  public static func == (a: BAKFramework.MediaSelectionType, b: BAKFramework.MediaSelectionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PVC : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
@@ -81,8 +148,126 @@ extension BAKFramework.BAKService : AppsFlyerLibDelegate {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+public enum MediaType {
+  case image
+  case video
+  public static func == (a: BAKFramework.MediaType, b: BAKFramework.MediaType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Media : Swift.Identifiable, Swift.Equatable {
+  public var id: Foundation.UUID
+  public static func == (lhs: BAKFramework.Media, rhs: BAKFramework.Media) -> Swift.Bool
+  public typealias ID = Foundation.UUID
+}
+extension BAKFramework.Media {
+  public var type: BAKFramework.MediaType {
+    get
+  }
+  public var duration: CoreFoundation.CGFloat? {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getURL() async -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getThumbnailURL() async -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getData() async -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getThumbnailData() async -> Foundation.Data?
+  #endif
+}
 @_hasMissingDesignatedInitializers public class Reachability {
   @objc deinit
+}
+@_Concurrency.MainActor(unsafe) public struct MediaPicker<AlbumSelectionContent, CameraSelectionContent> : SwiftUI.View where AlbumSelectionContent : SwiftUI.View, CameraSelectionContent : SwiftUI.View {
+  public typealias AlbumSelectionClosure = ((BAKFramework.ModeSwitcher, BAKFramework.AlbumSelectionView, Swift.Bool) -> AlbumSelectionContent)
+  public typealias CameraSelectionClosure = ((@escaping BAKFramework.SimpleClosure, @escaping BAKFramework.SimpleClosure, BAKFramework.CameraSelectionView) -> CameraSelectionContent)
+  #if compiler(>=5.3) && $AsyncAwait
+  public typealias FilterClosure = (BAKFramework.Media) async -> BAKFramework.Media?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public typealias MassFilterClosure = ([BAKFramework.Media]) async -> [BAKFramework.Media]
+  #endif
+  @_Concurrency.MainActor(unsafe) public init(isPresented: SwiftUI.Binding<Swift.Bool>, onChange: @escaping BAKFramework.MediaPickerCompletionClosure, albumSelectionBuilder: @escaping BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>.AlbumSelectionClosure, cameraSelectionBuilder: @escaping BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>.CameraSelectionClosure)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12BAKFramework11MediaPickerV4bodyQrvp", 0) __<AlbumSelectionContent, CameraSelectionContent>
+}
+extension BAKFramework.MediaPicker {
+  @_Concurrency.MainActor(unsafe) public func showLiveCameraCell(_ show: Swift.Bool = true) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  @_Concurrency.MainActor(unsafe) public func mediaSelectionType(_ type: BAKFramework.MediaSelectionType) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  @_Concurrency.MainActor(unsafe) public func mediaSelectionStyle(_ style: BAKFramework.MediaSelectionStyle) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  @_Concurrency.MainActor(unsafe) public func mediaSelectionLimit(_ limit: Swift.Int) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public func applyFilter(_ filterClosure: @escaping BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>.FilterClosure) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public func applyFilter(_ filterClosure: @escaping BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>.MassFilterClosure) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  #endif
+  @_Concurrency.MainActor(unsafe) public func didPressCancelCamera(_ didPressCancelCamera: @escaping () -> ()) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  @_Concurrency.MainActor(unsafe) public func orientationHandler(_ orientationHandler: @escaping BAKFramework.MediaPickerOrientationHandler) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  @_Concurrency.MainActor(unsafe) public func currentFullscreenMedia(_ currentFullscreenMedia: SwiftUI.Binding<BAKFramework.Media?>) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  @_Concurrency.MainActor(unsafe) public func albums(_ albums: SwiftUI.Binding<[BAKFramework.Album]>) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+  @_Concurrency.MainActor(unsafe) public func pickerMode(_ mode: SwiftUI.Binding<BAKFramework.MediaPickerMode>) -> BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>
+}
+extension BAKFramework.MediaPicker where AlbumSelectionContent == SwiftUI.EmptyView, CameraSelectionContent == SwiftUI.EmptyView {
+  @_Concurrency.MainActor(unsafe) public init(isPresented: SwiftUI.Binding<Swift.Bool>, onChange: @escaping BAKFramework.MediaPickerCompletionClosure)
+}
+extension BAKFramework.MediaPicker where AlbumSelectionContent == SwiftUI.EmptyView {
+  @_Concurrency.MainActor(unsafe) public init(isPresented: SwiftUI.Binding<Swift.Bool>, onChange: @escaping BAKFramework.MediaPickerCompletionClosure, cameraSelectionBuilder: @escaping BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>.CameraSelectionClosure)
+}
+extension BAKFramework.MediaPicker where CameraSelectionContent == SwiftUI.EmptyView {
+  @_Concurrency.MainActor(unsafe) public init(isPresented: SwiftUI.Binding<Swift.Bool>, onChange: @escaping BAKFramework.MediaPickerCompletionClosure, albumSelectionBuilder: @escaping BAKFramework.MediaPicker<AlbumSelectionContent, CameraSelectionContent>.AlbumSelectionClosure)
+}
+public struct Album : Swift.Identifiable {
+  public let id: Swift.String
+  public let title: Swift.String?
+  public let preview: Photos.PHAsset?
+  public typealias ID = Swift.String
+}
+@_Concurrency.MainActor(unsafe) public struct AlbumSelectionView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12BAKFramework18AlbumSelectionViewV4bodyQrvp", 0) __
+}
+public struct ModeSwitcher : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12BAKFramework12ModeSwitcherV4bodyQrvp", 0) __
+}
+public struct MediasGrid<Data, Camera, Content, LoadingCell> : SwiftUI.View where Data : Swift.RandomAccessCollection, Camera : SwiftUI.View, Content : SwiftUI.View, LoadingCell : SwiftUI.View, Data.Element : Swift.Identifiable {
+  public let data: Data
+  public let camera: () -> Camera
+  public let content: (Data.Element) -> Content
+  public let loadingCell: () -> LoadingCell
+  public init(_ data: Data, @SwiftUI.ViewBuilder camera: @escaping () -> Camera, @SwiftUI.ViewBuilder content: @escaping (Data.Element) -> Content, @SwiftUI.ViewBuilder loadingCell: @escaping () -> LoadingCell)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12BAKFramework10MediasGridV4bodyQrvp", 0) __<Data, Camera, Content, LoadingCell>
+}
+public enum MediaPickerMode : Swift.Equatable {
+  case photos
+  case albums
+  case album(BAKFramework.Album)
+  case camera
+  case cameraSelection
+  public static func == (lhs: BAKFramework.MediaPickerMode, rhs: BAKFramework.MediaPickerMode) -> Swift.Bool
+}
+@_Concurrency.MainActor(unsafe) public struct CameraSelectionView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12BAKFramework19CameraSelectionViewV4bodyQrvp", 0) __
 }
 extension Swift.Bool {
   public static func random() -> Swift.Bool
@@ -163,6 +348,25 @@ public struct Randoms {
   public static func createGravatar(_ style: BAKFramework.Randoms.GravatarStyle = .Standard, size: Swift.Int = 80, completion: ((_ image: UIKit.UIImage?, _ error: Swift.Error?) -> Swift.Void)?)
   public static func randomGravatar(_ size: Swift.Int = 80, completion: ((_ image: UIKit.UIImage?, _ error: Swift.Error?) -> Swift.Void)?)
 }
+public typealias MediaPickerCompletionClosure = ([BAKFramework.Media]) -> Swift.Void
+public typealias MediaPickerOrientationHandler = (BAKFramework.ShouldLock) -> Swift.Void
+public typealias SimpleClosure = () -> ()
+public enum ShouldLock {
+  case lock, unlock
+  public static func == (a: BAKFramework.ShouldLock, b: BAKFramework.ShouldLock) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BAKFramework.MediaSelectionStyle : Swift.Equatable {}
+extension BAKFramework.MediaSelectionStyle : Swift.Hashable {}
+extension BAKFramework.MediaSelectionType : Swift.Equatable {}
+extension BAKFramework.MediaSelectionType : Swift.Hashable {}
+extension BAKFramework.MediaType : Swift.Equatable {}
+extension BAKFramework.MediaType : Swift.Hashable {}
 extension BAKFramework.Randoms.GravatarStyle : Swift.Equatable {}
 extension BAKFramework.Randoms.GravatarStyle : Swift.Hashable {}
 extension BAKFramework.Randoms.GravatarStyle : Swift.RawRepresentable {}
+extension BAKFramework.ShouldLock : Swift.Equatable {}
+extension BAKFramework.ShouldLock : Swift.Hashable {}
