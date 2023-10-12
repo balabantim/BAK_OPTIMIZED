@@ -25,6 +25,8 @@ let package = Package(
             url: "https://github.com/UWAppDev/SwiftUI-MediaPicker", from: "0.2.0"),
         .package(
             url: "https://github.com/yutailang0119/SBPAsyncImage", from: "0.2.0"),
+        .package(
+            url: "https://github.com/quassum/SwiftUI-Tooltip",  branch: "main")
 
 
     ],
@@ -46,7 +48,9 @@ let package = Package(
                 .product(name: "FacebookCore", package: "facebook-ios-sdk"),
 
                   .product(name: "SBPAsyncImage", package: "SBPAsyncImage"),
+               
                   .product(name: "MediaPicker", package: "SwiftUI-MediaPicker"),
+                .product(name: "SwiftUITooltip")
             ]),
         
         .binaryTarget(

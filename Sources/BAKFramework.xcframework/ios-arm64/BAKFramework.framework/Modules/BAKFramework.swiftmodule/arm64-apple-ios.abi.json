@@ -9098,6 +9098,13 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUITooltip",
+        "printedName": "SwiftUITooltip",
+        "declKind": "Import",
+        "moduleName": "BAKFramework"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -13630,36 +13637,43 @@
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1077,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "StringLiteral",
-      "offset": 7307,
+      "offset": 7369,
       "length": 13,
       "value": "\"orientation\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "StringLiteral",
-      "offset": 7435,
+      "offset": 7497,
       "length": 13,
       "value": "\"orientation\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13455,
+      "offset": 13852,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13475,
+      "offset": 13872,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 21020,
+      "offset": 21584,
       "length": 5,
       "value": "false"
     },
@@ -13680,112 +13694,112 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 235,
+      "offset": 227,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 211,
+      "offset": 203,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 278,
+      "offset": 270,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 254,
+      "offset": 246,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 321,
+      "offset": 313,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 297,
+      "offset": 289,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 364,
+      "offset": 356,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 332,
       "length": 3,
       "value": "\"4\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 407,
+      "offset": 399,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 383,
+      "offset": 375,
       "length": 3,
       "value": "\"5\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "IntegerLiteral",
-      "offset": 447,
+      "offset": 439,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 426,
+      "offset": 418,
       "length": 3,
       "value": "\"6\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "IntegerLiteral",
-      "offset": 485,
+      "offset": 477,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 465,
+      "offset": 457,
       "length": 3,
       "value": "\"7\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 598,
+      "offset": 590,
       "length": 13,
       "value": "\"Leaderboard\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LeaderBoard.swift",
       "kind": "StringLiteral",
-      "offset": 5465,
+      "offset": 5457,
       "length": 66,
       "value": "\"https:\/\/secure.gravatar.com\/avatar\/thisimagewillnotbefound?s=111\""
     },
@@ -14226,77 +14240,77 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "StringLiteral",
-      "offset": 295,
+      "offset": 602,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "StringLiteral",
-      "offset": 333,
+      "offset": 640,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "StringLiteral",
-      "offset": 389,
+      "offset": 696,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "StringLiteral",
-      "offset": 418,
+      "offset": 725,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "StringLiteral",
-      "offset": 447,
+      "offset": 754,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "StringLiteral",
-      "offset": 473,
+      "offset": 780,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "BooleanLiteral",
-      "offset": 501,
+      "offset": 808,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "BooleanLiteral",
-      "offset": 534,
+      "offset": 841,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "Array",
-      "offset": 603,
+      "offset": 910,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "BooleanLiteral",
-      "offset": 663,
+      "offset": 970,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/LoginView.swift",
       "kind": "StringLiteral",
-      "offset": 755,
+      "offset": 1062,
       "length": 66,
       "value": "\"https:\/\/secure.gravatar.com\/avatar\/thisimagewillnotbefound?s=323\""
     },

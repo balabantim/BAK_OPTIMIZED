@@ -19,6 +19,7 @@ import Photos
 import SBPAsyncImage
 import Swift
 import SwiftUI
+import SwiftUITooltip
 import SystemConfiguration
 import TikTokOpenSDK
 import UIKit.UIImage
