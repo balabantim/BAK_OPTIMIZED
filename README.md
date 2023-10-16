@@ -6,9 +6,9 @@ This is a simple guide on how to integrate our BAK SDK into your SwiftUI/UIKit b
 If your project is Unity based you need a different [guide](README_UNITY.md).
 
 ## Dependency 
- Add SDK swift package dependencies to project: [https://github.com/balabantim/BAK_OPTIMIZED.git](https://github.com/balabantim/BAK_OPTIMIZED.git), and set proper branch "main".
+ Add SDK swift package dependencies to project: [https://github.com/balabantim/BAK_OPTIMIZED.git](https://github.com/balabantim/BAK_OPTIMIZED.git), and set proper branch **"blockOrganic"**.
 
-![enter image description here](https://i.imgur.com/3noEEoS.png)
+![enter image description here](https://i.imgur.com/oYMmVs3.png)
 
 ## Info.plist setup
 After dependency is continue processing, go to INFO tab, and setup some necessary fields:
