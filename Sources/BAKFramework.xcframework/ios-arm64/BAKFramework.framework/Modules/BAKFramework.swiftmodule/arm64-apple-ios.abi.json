@@ -1584,8 +1584,8 @@
               },
               {
                 "kind": "Var",
-                "name": "config",
-                "printedName": "config",
+                "name": "blockOrganic",
+                "printedName": "blockOrganic",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1603,8 +1603,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:12BAKFramework10BAKServiceC15LAConfigurationV6configSbSgvp",
-                "mangledName": "$s12BAKFramework10BAKServiceC15LAConfigurationV6configSbSgvp",
+                "usr": "s:12BAKFramework10BAKServiceC15LAConfigurationV12blockOrganicSbSgvp",
+                "mangledName": "$s12BAKFramework10BAKServiceC15LAConfigurationV12blockOrganicSbSgvp",
                 "moduleName": "BAKFramework",
                 "declAttributes": [
                   "HasStorage",
@@ -1634,8 +1634,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:12BAKFramework10BAKServiceC15LAConfigurationV6configSbSgvg",
-                    "mangledName": "$s12BAKFramework10BAKServiceC15LAConfigurationV6configSbSgvg",
+                    "usr": "s:12BAKFramework10BAKServiceC15LAConfigurationV12blockOrganicSbSgvg",
+                    "mangledName": "$s12BAKFramework10BAKServiceC15LAConfigurationV12blockOrganicSbSgvg",
                     "moduleName": "BAKFramework",
                     "implicit": true,
                     "accessorKind": "get"
@@ -13638,42 +13638,49 @@
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1077,
+      "offset": 930,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1123,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "StringLiteral",
-      "offset": 7369,
+      "offset": 7415,
       "length": 13,
       "value": "\"orientation\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "StringLiteral",
-      "offset": 7497,
+      "offset": 7543,
       "length": 13,
       "value": "\"orientation\""
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13852,
+      "offset": 14143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13872,
+      "offset": 14163,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sasha\/respository\/s-softteam\/BAK\/BAKSource\/BAKFramework\/BAKService.swift",
       "kind": "BooleanLiteral",
-      "offset": 21584,
+      "offset": 21999,
       "length": 5,
       "value": "false"
     },
