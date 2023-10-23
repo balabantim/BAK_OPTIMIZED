@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zVjz+qi1FuBs715aWiXzaZrgNRI=
+		0iblu9Cy6KWKWtKYaO6CF9djl4E=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LtX1iycAVPrvsLyF+X5iW9u8xn4=
+		LxNzr/n5lSnW/SmgR+ZtyBCyGzA=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LtX1iycAVPrvsLyF+X5iW9u8xn4=
+		LxNzr/n5lSnW/SmgR+ZtyBCyGzA=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Sb871kTjz1ZsNjkImy6os+tto8M=
+		LSTlTSLFk90ZOjCY8WfkvOu3vws=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zVjz+qi1FuBs715aWiXzaZrgNRI=
+		0iblu9Cy6KWKWtKYaO6CF9djl4E=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		T8eAxipYcdjf0O1bJtRoq8/eANg=
+		NJfXC1R9TiXiL5dQyNAKVSTpC7s=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		T8eAxipYcdjf0O1bJtRoq8/eANg=
+		NJfXC1R9TiXiL5dQyNAKVSTpC7s=
 		</data>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lnd3oLS/Lktw7ZWIp1SGziIM0Js=
+		AZVHXORDMx2gjenXVGBB+WHiEzc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GiNmPnMu7/juvl1eoH46vWYdnhkXlaz8QLI/15VCXfU=
+			tlI0Y3owjIHiNPBk2568qbT2magybnZ8yzW/osUvXew=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/brIgayEJR4ZvidjO9fBYcstYgXzdUuxRkRZgkEg6A0=
+			nmXfsizoyRIG4l5ipZNyGeQ4hznsk/V4CPYJPwSbU0A=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/brIgayEJR4ZvidjO9fBYcstYgXzdUuxRkRZgkEg6A0=
+			nmXfsizoyRIG4l5ipZNyGeQ4hznsk/V4CPYJPwSbU0A=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			84hBmwM4b4VanL3V+mjvqcaiflwhv1TBg2aAZHzEdOM=
+			D6Y4dk+W999CSkBuC/lYAZdkVxx/DrmKhfUZc+bFsO0=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GiNmPnMu7/juvl1eoH46vWYdnhkXlaz8QLI/15VCXfU=
+			tlI0Y3owjIHiNPBk2568qbT2magybnZ8yzW/osUvXew=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hLbWNUvCmztYG7Ek6QHBcy+Fuamc5vaI2ciOyOA8d50=
+			bv7+R9Kf+9ryjq64iEGFDk+6eozHG7EY+lW9tnL9buw=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hLbWNUvCmztYG7Ek6QHBcy+Fuamc5vaI2ciOyOA8d50=
+			bv7+R9Kf+9ryjq64iEGFDk+6eozHG7EY+lW9tnL9buw=
 			</data>
 		</dict>
 		<key>Modules/BAKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0R9NPJh799/pHqP6xBJp+UYEx9kMMXrwXa4PweXNgEw=
+			k5YXsRNCJ9wEO/5rPXkOgU+B4VEcOwLZyaDutXC98Lk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

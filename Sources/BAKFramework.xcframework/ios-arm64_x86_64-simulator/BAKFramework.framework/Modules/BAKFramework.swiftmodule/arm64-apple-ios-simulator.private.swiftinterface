@@ -61,6 +61,7 @@ import _StringProcessing
     public let blockOrganic: Swift.Bool?
     public let termUrl: Swift.String?
     public let back: Swift.Bool?
+    public let report: Swift.Bool?
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
